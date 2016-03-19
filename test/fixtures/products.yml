@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  price: 9.99
+  year: 1
+  storyline: MyString
+  genres: MyString
+  release_date: 2016-03-16
+  runtime: 2016-03-16 00:14:05
+  image_url: MyString
+
+two:
+  title: MyString
+  price: 9.99
+  year: 1
+  storyline: MyString
+  genres: MyString
+  release_date: 2016-03-16
+  runtime: 2016-03-16 00:14:05
+  image_url: MyString
