@@ -11,6 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160316071405) do
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.decimal  "price"
+    t.integer  "year"
+    t.string   "storyline"
+    t.string   "genres"
+    t.date     "release_date"
+    t.time     "runtime"
+    t.string   "image_url"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
 end
