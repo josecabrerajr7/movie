@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
-	validates :title, :price, :year, :storyline, :genres, :release_date, :runtime, :image_url, presence: false
-	
+
+	# validates create product
 	validates :title, uniqueness: true, :presence => { message: "Pretty Please!" }
 	validates :price, numericality: { greater_than_or_equal_to: 0.01, message: "Please! How you supposed to make money?" }
 	validates :year, :presence => { message: "Please, I really want to know!" }
@@ -10,4 +10,5 @@ class Product < ActiveRecord::Base
 		with: %r{\.(gif|jpg|png)\z}i,
 		message: "! How dare you not show an image of the movie!"
 	}
+
 end
